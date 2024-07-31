@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="460.0" stylesheets="@../resource/MainWindowStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainWindowController">
+   <children>
+      <Pane layoutX="6.0" layoutY="35.0" prefHeight="604.0" prefWidth="489.0" styleClass="mainPane">
+         <children>
+            <Pane prefHeight="0.0" prefWidth="448.0" />
+            <Pane layoutX="9.0" layoutY="10.0" onMouseClicked="#onNumberClicked" prefHeight="125.0" prefWidth="469.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="56.0" prefHeight="55.0" prefWidth="437.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEquation" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="14.0" prefHeight="8.0" prefWidth="437.0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnDelete" layoutX="392.0" layoutY="150.0" onMouseClicked="#onDeleteButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <ImageView fx:id="btnMinimize1322" fitHeight="33.0" fitWidth="33.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/delete.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnClear" layoutX="297.0" layoutY="150.0" onMouseClicked="#onDeleteButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult15" alignment="CENTER_RIGHT" layoutX="32.0" layoutY="19.0" prefHeight="47.0" prefWidth="22.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnSquareRoot" layoutX="202.0" layoutY="150.0" onMouseClicked="#onUnaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <ImageView fx:id="btnMinimize132" fitHeight="44.0" fitWidth="44.0" layoutX="21.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/math.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnExponent" layoutX="106.0" layoutY="150.0" onMouseClicked="#onUnaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <ImageView fx:id="btnMinimize131" fitHeight="47.0" fitWidth="44.0" layoutX="21.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnAbsolute" layoutX="297.0" layoutY="240.0" onMouseClicked="#onUnaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <ImageView fx:id="btnMinimize13" fitHeight="33.0" fitWidth="33.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/value-absolute.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnMod" layoutX="298.0" layoutY="510.0" onMouseClicked="#onBinaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult1221" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="24.0" prefHeight="37.0" prefWidth="53.0" text="mod" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnPercent" layoutX="392.0" layoutY="240.0" onMouseClicked="#onUnaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <ImageView fx:id="btnMinimize1321" fitHeight="37.0" fitWidth="43.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-percentage-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btn9" layoutX="202.0" layoutY="240.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult122" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn8" layoutX="106.0" layoutY="240.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label fx:id="lblResult121" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn7" layoutX="10.0" layoutY="240.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult12" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnMinus" layoutX="393.0" layoutY="330.0" onMouseClicked="#onBinaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult11" alignment="CENTER_RIGHT" layoutX="33.0" layoutY="16.0" prefHeight="47.0" prefWidth="16.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnPlus" layoutX="298.0" layoutY="330.0" onMouseClicked="#onBinaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult1" alignment="CENTER_RIGHT" layoutX="31.0" layoutY="19.0" prefHeight="47.0" prefWidth="22.0" text="+" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn6" layoutX="203.0" layoutY="330.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult125" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn5" layoutX="107.0" layoutY="330.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult124" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn4" layoutX="11.0" layoutY="330.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult123" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnDivide" layoutX="393.0" layoutY="420.0" onMouseClicked="#onBinaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <ImageView fx:id="btnMinimize2" fitHeight="33.0" fitWidth="33.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-divide-100.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnMultiply" layoutX="298.0" layoutY="420.0" onMouseClicked="#onBinaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <ImageView fx:id="btnMinimize1" fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-multiply-100.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btn3" layoutX="203.0" layoutY="420.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult128" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn2" layoutX="107.0" layoutY="420.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult127" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn1" layoutX="11.0" layoutY="420.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult126" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnEquals" layoutX="394.0" layoutY="510.0" onMouseClicked="#onEqualButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult13" alignment="CENTER_RIGHT" layoutX="31.0" layoutY="19.0" prefHeight="47.0" prefWidth="22.0" text="=" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnNegative" layoutX="203.0" layoutY="510.0" onMouseClicked="#onUnaryButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <ImageView fx:id="btnMinimize11" fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-plus-slash-minus-100.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnComma" layoutX="11.0" layoutY="510.0" onMouseClicked="#onCommaButtonClick" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult14" alignment="CENTER_RIGHT" layoutX="33.0" layoutY="10.0" prefHeight="37.0" prefWidth="16.0" text="," textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn0" layoutX="107.0" layoutY="510.0" onMouseClicked="#onNumberClicked" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult129" alignment="CENTER" layoutX="34.0" layoutY="24.0" prefHeight="35.0" prefWidth="18.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn01" layoutX="11.0" layoutY="150.0" onMouseClicked="#switchToByte" prefHeight="85.0" prefWidth="85.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="lblResult1291" alignment="CENTER" layoutX="12.0" layoutY="26.0" prefHeight="33.0" prefWidth="62.0" text="byte" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="titlePane" prefHeight="35.0" prefWidth="500.0">
+         <children>
+            <ImageView fx:id="btnClose" fitHeight="16.0" fitWidth="16.0" layoutX="468.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/cross-circle.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMinimize" fitHeight="16.0" fitWidth="16.0" layoutX="447.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/minus-circle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="19.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/calculator.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="11.0" text="Calculator" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
